@@ -1,5 +1,5 @@
 /**
- * Copyright © 2000 Your Name <your@address>
+ * Copyright © 2021 Alexander Bielby <xanderbielby+loadingbar@gmail.com>
  * This work is free. You can redistribute it and/or modify it under the
  * terms of the Do What The Fuck You Want To Public License, Version 2,
  * as published by Sam Hocevar. See http://www.wtfpl.net/ for more details.
@@ -101,7 +101,7 @@ export default class LoadingBar {
     output += (this.cols - (output.length + this.style.rM.length + 3) > 7)
       ? this.bar(this.cols - (output.length + this.style.rM.length + 1), current) + " " + this.style.rM
       : this.bar(this.cols - output.length, current);
-    return output + (this.reset ? "\x1B[F" : "");
+    return output + ((this.reset && current != this.max) ? "\x1B[F" : "");
   }
 
   /**
