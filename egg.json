@@ -4,7 +4,7 @@
   "entry": "./mod.ts",
   "description": "Dynamic, dependency-free loading bars using Deno's --unstable API",
   "homepage": "https://github.com/Omega0x013/loadingbar.ts",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "releaseType": null,
   "unstable": false,
   "unlisted": false,
