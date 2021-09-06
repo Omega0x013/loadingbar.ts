@@ -61,13 +61,12 @@ export default class LoadingBar {
   constructor(
     style = new BarStyle(),
     max = 100,
-    dynamic = true,
     reset = true,
-    cols: number = Deno.consoleSize(Deno.stdout.rid).columns
+    cols: number = -1 // set to -1 for dynamic bar
   ) {
     this.style = style;
     this.max = max;
-    this.dynamic = dynamic;
+    this.dynamic = cols == -1;
     this.reset = reset;
     this.cols = cols;
   }

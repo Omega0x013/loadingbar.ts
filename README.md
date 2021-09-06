@@ -44,9 +44,8 @@ const bar = new LoadingBar(
     number // NumberStyle
   ),
   max, // Total number of tasks to be completed
-  dynamic, // true: dynamically size the bar the screen
   reset, // Don't use ESC[F to overwrite the previous bar
-  cols // Width of the screen - when not using dynamic set this
+  cols // Width of the screen - don't set or set to -1 for a dynamically sized bar
 )
 ```
 
